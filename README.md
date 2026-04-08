@@ -385,8 +385,7 @@ Contributions welcome! Please follow:
 
 For issues, questions, or suggestions:
 - GitHub Issues: [Create issue]
-- Email: [your-email]
-- Discord: [Link]
+- Email: s.mohsinali.se@gmail.com
 
 ---
 
