@@ -128,7 +128,7 @@ export function Header() {
             <motion.a
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
-              href="https://github.com"
+              href="https://github.com/Mohsin-Ali0/code-reviewer-ai"
               target="_blank"
               rel="noopener noreferrer"
               style={{
