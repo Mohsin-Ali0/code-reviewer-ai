@@ -34,8 +34,8 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
           backgroundSize: ['200% 200%', '200% 200%'],
         }}
         transition={{ 
-          background: { duration: 0.5, ease: 'easeInOut' },
-          backgroundSize: { duration: 15, repeat: Infinity, ease: 'linear' },
+          background: { duration: 0.5, ease: 'easeInOut' as const },
+          backgroundSize: { duration: 15, repeat: Infinity, ease: 'linear' as const },
         }}
         style={{
           position: 'absolute',
@@ -50,7 +50,7 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
       <motion.div
         key={`orbs-light-${isDark}`}
         animate={{ opacity: isDark ? 0 : 1 }}
-        transition={{ duration: 0.5, ease: 'easeInOut' }}
+        transition={{ duration: 0.5, ease: 'easeInOut' as const }}
         style={{ position: 'absolute', width: '100%', height: '100%', pointerEvents: 'none' }}
       >
         {!isDark && (
@@ -61,7 +61,7 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
                 y: [0, 50, 0],
                 opacity: [0.3, 0.6, 0.3],
               }}
-              transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+              transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' as const }}
               style={{
                 position: 'absolute',
                 width: 300,
@@ -79,7 +79,7 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
                 y: [0, -60, 0],
                 opacity: [0.2, 0.5, 0.2],
               }}
-              transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+              transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' as const }}
               style={{
                 position: 'absolute',
                 width: 250,
@@ -99,7 +99,7 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
       <motion.div
         key={`orbs-dark-${isDark}`}
         animate={{ opacity: isDark ? 1 : 0 }}
-        transition={{ duration: 0.5, ease: 'easeInOut' }}
+        transition={{ duration: 0.5, ease: 'easeInOut' as const }}
         style={{ position: 'absolute', width: '100%', height: '100%', pointerEvents: 'none' }}
       >
         {isDark && (
@@ -110,7 +110,7 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
                 y: [0, 80, 0],
                 opacity: [0.2, 0.5, 0.2],
               }}
-              transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
+              transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' as const }}
               style={{
                 position: 'absolute',
                 width: 400,
@@ -128,7 +128,7 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
                 y: [0, -100, 0],
                 opacity: [0.15, 0.4, 0.15],
               }}
-              transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
+              transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' as const }}
               style={{
                 position: 'absolute',
                 width: 350,
@@ -146,7 +146,7 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
                 y: [0, -70, 0],
                 opacity: [0.1, 0.3, 0.1],
               }}
-              transition={{ duration: 16, repeat: Infinity, ease: 'easeInOut' }}
+              transition={{ duration: 16, repeat: Infinity, ease: 'easeInOut' as const }}
               style={{
                 position: 'absolute',
                 width: 300,
@@ -172,8 +172,8 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
             backgroundPosition: ['0px 0px', '0px 50px'],
           }}
           transition={{ 
-            opacity: { duration: 4, repeat: Infinity, ease: 'easeInOut' },
-            backgroundPosition: { duration: 3, repeat: Infinity, ease: 'linear' }
+            opacity: { duration: 4, repeat: Infinity, ease: 'easeInOut' as const },
+            backgroundPosition: { duration: 3, repeat: Infinity, ease: 'linear' as const }
           }}
           style={{
             position: 'absolute',
@@ -193,7 +193,7 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
             scale: [1, 1.3, 1],
             opacity: [0.15, 0.4, 0.15],
           }}
-          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' as const }}
           style={{
             position: 'fixed',
             width: 500,
@@ -216,7 +216,7 @@ export function AnimatedBackground({ mode }: AnimatedBackgroundProps) {
             scale: [1, 1.5, 1],
             opacity: [0.08, 0.2, 0.08],
           }}
-          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 0.2 }}
+          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' as const, delay: 0.2 }}
           style={{
             position: 'fixed',
             width: 700,

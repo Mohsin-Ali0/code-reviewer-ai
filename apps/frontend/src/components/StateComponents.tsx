@@ -18,7 +18,7 @@ export function LoadingState() {
       transition: {
         duration: 2,
         repeat: Infinity,
-        ease: 'easeInOut',
+        ease: 'easeInOut' as const,
       },
     },
   };
@@ -50,7 +50,7 @@ export function LoadingState() {
     >
       <MotionBox
         animate={{ rotate: 360 }}
-        transition={{ duration: 2.5, repeat: Infinity, ease: 'linear' }}
+        transition={{ duration: 2.5, repeat: Infinity, ease: 'linear' as const }}
       >
         <CircularProgress
           size={70}
@@ -175,7 +175,7 @@ export function EmptyState() {
       <Box sx={{ position: 'absolute', top: 20, right: 30, opacity: 0.1 }}>
         <motion.div
           animate={{ rotate: 360 }}
-          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+          transition={{ duration: 20, repeat: Infinity, ease: 'linear' as const }}
         >
           <Box sx={{ fontSize: '5rem' }}>⚙️</Box>
         </motion.div>
