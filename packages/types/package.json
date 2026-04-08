@@ -1,0 +1,10 @@
+{
+  "name": "@code-reviewer/types",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "build": "echo 'Types package - no build needed'"
+  }
+}

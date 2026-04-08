@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+.next/
+out/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+coverage/
+.turbo/
+.vercel/
+.vscode/settings.json
+*.swp
+*.swo
